@@ -38,14 +38,14 @@ public class CardOrderTest {
 
     @Test
     void shouldTestSomething() {
-            driver.findElement(By.cssSelector("[data-test-id='name'] input")).sendKeys("Ветрянной Геннадий");
-            driver.findElement(By.cssSelector("[data-test-id='phone'] input")).sendKeys("+79090091919");
-            driver.findElement(By.cssSelector("[data-test-id='agreement'] ")).click();
-            driver.findElement(By.cssSelector("button.button")).click();
-            var actualText = driver.findElement(By.cssSelector("[data-test-id=order-success]")).getText().trim();
-            assertEquals("Ваша заявка успешно отправлена! Наш менеджер свяжется с вами в ближайшее время.", actualText);
+        driver.findElement(By.cssSelector("[data-test-id='name'] input")).sendKeys("Ветрянной Геннадий");
+        driver.findElement(By.cssSelector("[data-test-id='phone'] input")).sendKeys("+79090091919");
+        driver.findElement(By.cssSelector("[data-test-id='agreement'] ")).click();
+        driver.findElement(By.cssSelector("button.button")).click();
+        var actualText = driver.findElement(By.cssSelector("[data-test-id=order-success]")).getText().trim();
+        assertEquals("Ваша заявка успешно отправлена! Наш менеджер свяжется с вами в ближайшее время.", actualText);
 
-        }
+    }
 
 
 }
